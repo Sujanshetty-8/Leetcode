@@ -9,11 +9,11 @@ class Solution(object):
         i=0
         j=len(li)-1
         while i<j:
-            if li[i].lower() in vowels and li[j].lower() in vowels:
+            if li[i] in vowels and li[j] in vowels:
                 li[i],li[j]=li[j],li[i]
                 i+=1
                 j-=1
-            elif li[i].lower() in vowels:
+            elif li[i] in vowels:
                 j-=1
             else:
                 i+=1
